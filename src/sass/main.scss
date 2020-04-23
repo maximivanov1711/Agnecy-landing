@@ -1,5 +1,11 @@
+@import "variables.scss";
+
 * {
   box-sizing: border-box;
+}
+
+p {
+  line-height: 1.4;
 }
 
 body {
