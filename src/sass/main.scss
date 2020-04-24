@@ -2,6 +2,15 @@
 
 * {
   box-sizing: border-box;
+
+  &:hover, &:focus {
+    outline: none;
+  }
+}
+
+a {
+  color: $light;
+  text-decoration: none;
 }
 
 p {
@@ -9,5 +18,44 @@ p {
 }
 
 body {
+  margin: 0;
   font-family: 'Open Sans', sans-serif;
+}
+
+.intro {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark;
+
+    #menu {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      list-style: none;
+
+      li {
+        padding: 30px 20px;
+        transition: background-color .1s;
+
+        &:hover {
+          background-color: $red;
+        }
+      }
+    }
+
+    #menu-button {
+      display: none;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+
+      img {
+        height: 50px;
+      }
+    }
+  }
 }
