@@ -287,10 +287,12 @@ h3 {
   }
 
   .photo__big {
-    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    height: 450px;
 
     img {
-      max-width: 100%;
+      width: 100%;
       height: 100%;
       object-fit: cover;
     }
@@ -334,8 +336,40 @@ h3 {
     display: flex;
     justify-content: space-between;
 
-    img {
+    .gallery__photo__wrapper {
+      position: relative;
       width: 23.5%;
+      object-fit: cover;
+
+      @media (min-width: 1024px) {
+        &:hover::after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      &::after {
+        width: 100%;
+        padding: 5px 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        font-weight: 600;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0);
+        content: attr(data-name);
+        color: $light;
+        transition: .1s;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }

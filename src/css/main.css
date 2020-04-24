@@ -195,9 +195,11 @@ h3 {
       height: 3px;
       background-color: #ff3f40; }
   .team .photo__big {
-    margin: 0 auto; }
+    width: 100%;
+    max-width: 400px;
+    height: 450px; }
     .team .photo__big img {
-      max-width: 100%;
+      width: 100%;
       height: 100%;
       object-fit: cover; }
   .team .team__wrapper {
@@ -225,5 +227,30 @@ h3 {
   .team .team__gallery {
     display: flex;
     justify-content: space-between; }
-    .team .team__gallery img {
-      width: 23.5%; }
+    .team .team__gallery .gallery__photo__wrapper {
+      position: relative;
+      width: 23.5%;
+      object-fit: cover; }
+      @media (min-width: 1024px) {
+        .team .team__gallery .gallery__photo__wrapper:hover::after {
+          opacity: 1;
+          visibility: visible; } }
+      .team .team__gallery .gallery__photo__wrapper::after {
+        width: 100%;
+        padding: 5px 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        font-weight: 600;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0);
+        content: attr(data-name);
+        color: #f6f2f1;
+        transition: .1s; }
+      .team .team__gallery .gallery__photo__wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
