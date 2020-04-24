@@ -1,5 +1,22 @@
+@media (max-width: 1024px) {
+  .intro__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro__desc {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   #header {
+    margin-top: 0;
     justify-content: flex-end;
     align-items: flex-start;
     padding: 20px;
@@ -23,6 +40,14 @@
 
     #menu-button {
       display: inline-block;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .intro__desc {
+    h1 {
+      font-size: 30px;
     }
   }
 }
