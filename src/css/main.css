@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 a {
   color: #f6f2f1;
@@ -20,9 +20,17 @@ h1 {
   font-weight: 800;
   font-size: 50px; }
 
+h2 {
+  font-size: 35px; }
+
+h3 {
+  font-size: 25px;
+  color: #666 !important; }
+
 .container {
   max-width: 1250px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 20px; }
 
 .title {
   margin: 0;
@@ -34,10 +42,10 @@ h1 {
   border: none;
   background-color: #666;
   border-radius: 5px;
-  transition: .1s; }
+  transition: 0.1s; }
 
 .intro {
-  padding: 20px;
+  padding-top: 20px;
   background-color: #eee; }
   .intro header {
     display: flex;
@@ -53,7 +61,7 @@ h1 {
       list-style: none; }
       .intro header #menu li {
         padding: 30px 20px;
-        transition: background-color .1s; }
+        transition: background-color 0.1s; }
         .intro header #menu li:hover {
           background-color: #ff3f40; }
     .intro header #menu-button {
@@ -67,7 +75,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     padding: 100px 0; }
-  .intro .intro__desc, .intro .intro__video {
+  .intro .intro__desc,
+  .intro .intro__video {
     flex: 1; }
   .intro .intro__desc {
     max-width: 500px; }
@@ -86,3 +95,44 @@ h1 {
       height: 100%;
       width: 100%;
       object-fit: cover; }
+
+.about .about__wrapper {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between; }
+
+.about .about__desc, .about .about__capabilities {
+  flex: 1; }
+
+.about .about__desc {
+  padding-right: 100px; }
+  .about .about__desc p {
+    color: #312f30;
+    margin: 50px 0; }
+  .about .about__desc a {
+    color: #ff3f40;
+    background-color: #fff;
+    border: 3px solid #ff3f40;
+    transition: .1s; }
+    .about .about__desc a:hover {
+      color: #f6f2f1;
+      background-color: #ff3f40; }
+
+.about .about__capabilities {
+  display: flex;
+  flex-direction: column; }
+  .about .about__capabilities .capabilities__row {
+    display: flex;
+    margin-bottom: 30px; }
+    .about .about__capabilities .capabilities__row:last-child {
+      margin: 0 !important; }
+  .about .about__capabilities .capabilities__item {
+    padding: 10px;
+    padding-right: 20px;
+    position: relative; }
+    .about .about__capabilities .capabilities__item h3 {
+      margin-top: 70px; }
+  .about .about__capabilities .capabilities__icon {
+    position: absolute;
+    top: 10px;
+    left: 10px; }

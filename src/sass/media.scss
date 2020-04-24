@@ -1,5 +1,6 @@
 @media (max-width: 1024px) {
   .intro__wrapper {
+    padding: 70px 0 !important;
     flex-direction: column;
     align-items: center;
   }
@@ -10,6 +11,33 @@
 
     h1 {
       font-size: 40px;
+    }
+  }
+
+  .about {
+
+    .about__wrapper {
+      padding: 70px 0;
+      flex-direction: column;
+    }
+
+    .about__capabilities {
+      margin-top: 70px;
+    }
+
+    .capabilities__row {
+      justify-content: space-around;
+    }
+
+    .capabilities__item {
+      max-width: 300px;
+    }
+
+    .about__desc {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
     }
   }
 }
@@ -42,12 +70,45 @@
       display: inline-block;
     }
   }
+
+  .about__desc {
+    p {
+      margin: 30px 0 !important;
+    }
+  }
+
+  .about__capabilities {
+    .capabilities__item {
+      padding-right: 10px !important;
+    }
+  }
 }
 
 @media (max-width: 425px) {
+  .intro__wrapper {
+    padding: 50px 0 !important;
+  }
+
   .intro__desc {
     h1 {
       font-size: 30px;
     }
+  }
+
+  .about__wrapper {
+    padding: 50px 0 !important;
+
+    h2 {
+      font-size: 25px;
+    }
+  }
+
+  .capabilities__row {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .capabilities__item {
+    padding-right: 0 !important;
   }
 }
