@@ -141,11 +141,11 @@ h3 {
 }
 
 .about {
-
   .about__wrapper {
     padding: 100px 0;
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid $lightgrey;
   }
 
   .about__desc, .about__capabilities {
@@ -200,6 +200,66 @@ h3 {
       position: absolute;
       top: 10px;
       left: 10px;
+    }
+  }
+}
+
+.feature {
+  padding: 100px 0;
+  text-align: center;
+
+  p {
+    position: relative;
+    margin: 40px auto 100px;
+    max-width: 500px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -50px;
+      transform: translate(-50%, 0);
+      width: 120px;
+      height: 3px;
+      background-color: $red;
+    }
+  }
+
+  nav {
+    max-width: 700px;
+    margin: 30px auto;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      margin: 0 10px;
+      font-weight: 600;
+      color: $dark;
+      transition: .1s;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+
+    .gallery__row {
+      display: flex;
+    }
+
+    img {
+      width: 25%;
     }
   }
 }

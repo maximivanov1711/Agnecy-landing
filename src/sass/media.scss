@@ -15,7 +15,6 @@
   }
 
   .about {
-
     .about__wrapper {
       padding: 70px 0;
       flex-direction: column;
@@ -39,6 +38,10 @@
       padding: 0;
       text-align: center;
     }
+  }
+
+  .feature {
+    padding: 70px 0;
   }
 }
 
@@ -82,6 +85,24 @@
       padding-right: 10px !important;
     }
   }
+
+  .feature {
+    p {
+      margin: 30px auto 70px;
+
+      &::after {
+        bottom: -35px;
+      }
+    }
+
+    nav {
+      margin: 20px auto;
+
+      a {
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 @media (max-width: 425px) {
@@ -110,5 +131,11 @@
 
   .capabilities__item {
     padding-right: 0 !important;
+  }
+
+  .feature {
+    a {
+      font-size: 12px;
+    }
   }
 }

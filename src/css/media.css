@@ -21,7 +21,9 @@
     max-width: 500px;
     margin: 0 auto;
     padding: 0;
-    text-align: center; } }
+    text-align: center; }
+  .feature {
+    padding: 70px 0; } }
 
 @media (max-width: 768px) {
   #header {
@@ -43,7 +45,15 @@
   .about__desc p {
     margin: 30px 0 !important; }
   .about__capabilities .capabilities__item {
-    padding-right: 10px !important; } }
+    padding-right: 10px !important; }
+  .feature p {
+    margin: 30px auto 70px; }
+    .feature p::after {
+      bottom: -35px; }
+  .feature nav {
+    margin: 20px auto; }
+    .feature nav a {
+      font-size: 14px; } }
 
 @media (max-width: 425px) {
   .intro__wrapper {
@@ -58,4 +68,6 @@
     align-items: center;
     flex-direction: column; }
   .capabilities__item {
-    padding-right: 0 !important; } }
+    padding-right: 0 !important; }
+  .feature a {
+    font-size: 12px; } }
