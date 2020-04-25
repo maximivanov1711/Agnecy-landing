@@ -206,4 +206,13 @@
       font-size: 30px;
     }
   }
+
+  .footer__wrapper {
+    text-align: center;
+    flex-direction: column;
+
+    .social {
+      margin-top: 20px;
+    }
+  }
 }

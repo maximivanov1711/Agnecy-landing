@@ -284,3 +284,18 @@ h3 {
       transition: .1s; }
       .subscribe form [type="submit"]:hover {
         background-color: #e43535; }
+
+footer {
+  padding: 20px 0;
+  background-color: #312f30; }
+  footer .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  footer p {
+    margin: 0; }
+  footer .social {
+    display: flex;
+    justify-content: space-around; }
+    footer .social img {
+      margin: 0 5px; }

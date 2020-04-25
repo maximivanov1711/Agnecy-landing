@@ -416,3 +416,27 @@ h3 {
     }
   }
 }
+
+footer {
+  padding: 20px 0;
+  background-color: $dark;
+
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+
+    img {
+      margin: 0 5px;
+    }
+  }
+}
