@@ -141,6 +141,22 @@
       }
     }
   }
+
+  .subscribe {
+    padding: 70px 0;
+
+    form {
+      align-items: center;
+
+      [type="email"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      flex-direction: column;
+    }
+  }
 }
 
 @media (max-width: 425px) {
@@ -181,5 +197,13 @@
 
   .team {
     padding-bottom: 50px;
+  }
+
+  .subscribe {
+    padding: 50px 0;
+
+    h2 {
+      font-size: 30px;
+    }
   }
 }

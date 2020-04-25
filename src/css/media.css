@@ -73,7 +73,16 @@
   .feature nav {
     margin: 20px auto; }
     .feature nav a {
-      font-size: 14px; } }
+      font-size: 14px; }
+  .subscribe {
+    padding: 70px 0; }
+    .subscribe form {
+      align-items: center;
+      flex-direction: column; }
+      .subscribe form [type="email"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px; } }
 
 @media (max-width: 425px) {
   .intro__wrapper {
@@ -94,4 +103,8 @@
     .feature a {
       font-size: 12px; }
   .team {
-    padding-bottom: 50px; } }
+    padding-bottom: 50px; }
+  .subscribe {
+    padding: 50px 0; }
+    .subscribe h2 {
+      font-size: 30px; } }

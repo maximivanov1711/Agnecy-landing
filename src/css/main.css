@@ -254,3 +254,33 @@ h3 {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+
+.subscribe {
+  padding: 100px 0;
+  text-align: center;
+  background-image: url("https://place-hold.it/1920x1080");
+  background-position: center;
+  background-size: cover; }
+  .subscribe h2 {
+    max-width: 1000px;
+    margin: 0 auto; }
+  .subscribe p {
+    margin: 40px 0 70px; }
+  .subscribe form {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto; }
+    .subscribe form [type="email"] {
+      color: #666;
+      border: none;
+      background-color: #eee;
+      border-radius: 5px;
+      flex: 1;
+      padding: 20px;
+      margin-right: 15px; }
+    .subscribe form [type="submit"] {
+      background-color: #ff3f40;
+      color: #f6f2f1;
+      transition: .1s; }
+      .subscribe form [type="submit"]:hover {
+        background-color: #e43535; }
