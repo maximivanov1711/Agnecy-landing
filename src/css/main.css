@@ -28,6 +28,7 @@ h3 {
   color: #666 !important; }
 
 .container {
+  width: 100%;
   max-width: 1250px;
   margin: 0 auto;
   padding: 0 20px; }
@@ -285,6 +286,64 @@ h3 {
       .subscribe form [type="submit"]:hover {
         background-color: #e43535; }
 
+.form {
+  padding: 100px 0; }
+  .form .container > p {
+    position: relative;
+    max-width: 700px;
+    margin: 40px 0 100px; }
+    .form .container > p::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -50px;
+      width: 120px;
+      height: 3px;
+      background-color: #ff3f40; }
+  .form .form__wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .form form {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .form form [type="text"], .form form [type="email"] {
+      width: 48%; }
+    .form form textarea {
+      margin-top: 40px;
+      width: 100%; }
+    .form form [type="text"], .form form [type="email"], .form form textarea {
+      font-size: 16px;
+      background-color: #eee;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 10px; }
+    .form form [type="submit"] {
+      padding: 20px 0;
+      margin-top: 40px;
+      width: 100%;
+      background-color: #ff3f40;
+      color: #f6f2f1;
+      transition: .1s; }
+      .form form [type="submit"]:hover {
+        background-color: #e43535; }
+  .form .contacts {
+    padding: 0 50px;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #312f30; }
+    .form .contacts * {
+      margin: 10px 0; }
+
 footer {
   padding: 20px 0;
   background-color: #312f30; }
@@ -298,4 +357,5 @@ footer {
     display: flex;
     justify-content: space-around; }
     footer .social img {
+      display: block;
       margin: 0 5px; }

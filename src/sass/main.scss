@@ -40,6 +40,7 @@ h3 {
 }
 
 .container {
+  width: 100%;
   max-width: 1250px;
   margin: 0 auto;
   padding: 0 20px;
@@ -417,6 +418,87 @@ h3 {
   }
 }
 
+.form {
+  padding: 100px 0;
+
+  .container > p {
+    position: relative;
+    max-width: 700px;
+    margin: 40px 0 100px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -50px;
+      width: 120px;
+      height: 3px;
+      background-color: $red;
+    }
+  }
+
+  .form__wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  form {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    [type="text"], [type="email"] {
+      width: 48%;
+    }
+  
+    textarea {
+      margin-top: 40px;
+      width: 100%;
+    }
+  
+    [type="text"], [type="email"], textarea {
+      font-size: 16px;
+      background-color: $lightgrey;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 10px;
+    }
+
+    [type="submit"] {
+      padding: 20px 0;
+      margin-top: 40px;
+      width: 100%;
+      background-color: $red;
+      color: $light;
+      transition: .1s;
+
+      &:hover {
+        background-color: $darkred;
+      }
+    }
+  }
+
+  .contacts {
+    padding: 0 50px;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $dark;
+
+    * {
+      margin: 10px 0;
+    }
+  }
+}
+
 footer {
   padding: 20px 0;
   background-color: $dark;
@@ -436,6 +518,7 @@ footer {
     justify-content: space-around;
 
     img {
+      display: block;
       margin: 0 5px;
     }
   }

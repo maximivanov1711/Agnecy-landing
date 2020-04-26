@@ -43,7 +43,27 @@
       margin: 30px auto !important; }
   .photo__big {
     margin: 0 auto;
-    max-height: 450px; } }
+    max-height: 450px; }
+  .form {
+    padding-bottom: 0; }
+    .form .form__wrapper {
+      flex-direction: column;
+      align-items: center; }
+      .form .form__wrapper form {
+        width: 100%;
+        margin-bottom: 70px; }
+    .form .contacts {
+      padding: 0 20px;
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      position: relative; }
+      .form .contacts h3 {
+        margin-top: 20px;
+        width: 100%; }
+      .form .contacts p {
+        margin-right: 20px; } }
 
 @media (max-width: 768px) {
   #header {
@@ -82,7 +102,9 @@
       .subscribe form [type="email"] {
         width: 100%;
         margin-right: 0;
-        margin-bottom: 20px; } }
+        margin-bottom: 20px; }
+  .form {
+    padding: 70px 0 0; } }
 
 @media (max-width: 425px) {
   .intro__wrapper {
@@ -112,4 +134,23 @@
     text-align: center;
     flex-direction: column; }
     .footer__wrapper .social {
-      margin-top: 20px; } }
+      margin-top: 20px; }
+  .form {
+    padding: 50px 0 0; }
+    .form [type="text"], .form [type="email"] {
+      width: 100% !important; }
+    .form [type="text"] {
+      margin-bottom: 20px; }
+    .form [type="submit"] {
+      margin-top: 20px !important; }
+    .form textarea {
+      margin-top: 20px !important; }
+    .form form {
+      margin-bottom: 50px !important; }
+    .form .contacts {
+      justify-content: center; }
+      .form .contacts h3 {
+        text-align: center; }
+      .form .contacts p {
+        margin-right: 0;
+        text-align: center; } }
