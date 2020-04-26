@@ -46,6 +46,14 @@
     max-height: 450px; }
   .form {
     padding-bottom: 0; }
+    .form > .container p, .form > .container h2 {
+      text-align: center; }
+    .form > .container p {
+      margin-left: auto;
+      margin-right: auto; }
+      .form > .container p::after {
+        left: 50%;
+        transform: translate(-50%, 0); }
     .form .form__wrapper {
       flex-direction: column;
       align-items: center; }
